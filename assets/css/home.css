@@ -92,31 +92,43 @@
   margin: 0 64px;
 }
 
-.section3 {
+.container {
   width: 1920px;
   padding: 64px;
+  display: flex;
   position: relative;
 }
-.section3__box {
-  width: 25%;
-  margin: 0 64px 0 0;
-  display: inline;
+
+.container:before {
+  content: "";
+  border: 1px solid #1E1E21;
+  position: absolute;
+  top: 64px;
+  left: 30%;
+  height: calc(100% - 128px);
 }
-.section3__me {
+
+.contena {
+  display: flex;
+  justify-content: space-between;
+  color: #1E1E21;
+  width: 27%;
+  height: 50px;
+  margin: 0 65px 0 0;
+}
+.contena__title {
   font-size: 32px;
   line-height: 120%;
   letter-spacing: -1px;
-  color: #1E1E21;
-  display: inline-flex;
+  margin: 0 16px 0 0;
 }
-.section3__arrow {
+.contena__ar-image {
   width: 50px;
   height: 50px;
-  color: #1E1E21;
-  margin: 0 0 0 32px;
   position: relative;
+  margin: 0 0 0 16px;
 }
-.section3__arrow img {
+.contena__ar-image img {
   width: 25px;
   height: 25px;
   position: absolute;
@@ -124,12 +136,74 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.section3__line {
+
+.case {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 73%;
+  margin: 0 0 0 65px;
+  position: relative;
+}
+.case__section {
+  width: calc(50% - 65px);
+}
+.case__warp1:before {
   position: absolute;
-  top: 64px;
-  left: calc(25% + 64px);
-  width: 2px;
-  height: 506px;
-  border-right: 2px solid #1E1E21;
+  content: "";
+  top: 0;
+  left: 606px;
+  border: 1px solid #1E1E21;
+  height: calc(50% - 64px);
+}
+.case__warp2:before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 606px;
+  border: 1px solid #1E1E21;
+  height: calc(50% - 64px);
+}
+.case__section:nth-child(1) {
+  margin: 0 65px 65px 0;
+}
+.case__section:nth-child(2) {
+  margin: 0 0 65px 65px;
+}
+.case__section:nth-child(3) {
+  margin: 65px 65px 0 0;
+}
+.case__section:nth-child(4) {
+  margin: 65px 0 0 65px;
+}
+.case__section__title {
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: -1px;
+  display: inline-block;
+  margin: 0 0 8px;
+}
+.case__section__text {
+  font-size: 24px;
+  line-height: 160%;
+  font-weight: 500;
+  margin: 8px 0 0;
+  opacity: 0.7;
+}
+
+.case::before {
+  content: "";
+  border-bottom: 2px solid #1E1E21;
+  position: absolute;
+  top: 253px;
+  left: 0;
+  width: 100%;
+}
+
+.footer {
+  width: 1920px;
+  height: 750px;
+  background: #1E1E21;
+  color: #F5F3EF;
 }
 /*# sourceMappingURL=home.css.map */
