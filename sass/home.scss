@@ -6,7 +6,6 @@
 }
 
 
-
 .section {
   width: 1920px;
   padding: 64px 64px 48px 64px;
@@ -50,7 +49,41 @@
   margin: 0;
 }
 
-
+// スマホsp
+@media screen and (max-width:400px) {
+  .section {
+    width: 400px;
+    padding: 98px 13px 10px;
+    &__title {
+      width: 386px;
+      font-size: 80px;
+      line-height: 110%;
+      letter-spacing: -4px;
+      margin: 0 0 7px;
+    }
+    &__name {
+      width: 100%;
+      font-size: 22px;
+      line-height: 120%;
+      letter-spacing: -2px;
+    }
+    &__nav {
+      top: 22px;
+      right: 21px;
+      padding: 13px 20px;
+      nav {
+        font-size: 20px;
+        letter-spacing: -0.4px;
+      }
+    }
+  }
+  .home-images {
+    width: 400px;
+    height: 230px;
+    display: block;
+    margin: 0;
+  }
+}
 .section2 {
   width: 1920px;
   display: flex;
@@ -106,11 +139,75 @@
   }
 }
 
+// スマホSP
+@media screen and (max-width:400px) {
+  .section2 {
+    width: 400px;
+    height: 640px;
+    display: block;
+    padding: 40px 20px 0 20px;
+    position: relative;
+    &__info {
+      width: 360px;
+      height: 406px;
+      font-size: 48px;
+      line-height: 120%;
+      letter-spacing: -1px;
+      margin: 0 0 40px 0;
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+    }
+    &__line {
+      display: none;
+    }
+    &__about {
+      position: absolute;
+      top: 40px;
+      left: 20px;
+      width: 67%;
+      height: auto;
+      font-size: 24px;
+      line-height: 120%;
+      margin: 0 0 40px 0;
+    }
+    &__me {
+      font-size: 24px;
+      margin: 0 0 19px 0;
+    }
+    &__badge {
+      width: 100%;
+      height: 66px;
+      position: static;
+      
+    }
+    &__badge__item {
+      width: 66px;
+      height: 66px;
+      padding: 19px;
+    }
+    img {
+      @include p();
+      width: 28px;
+      height: 28px;
+    }
+  }
+}
 .line {
   border-bottom: 2px solid #1E1E21;
   width: calc(1920 - 128) + px;
   margin: 0 64px;
 }
+// スマホSP
+@media screen and (max-width:400px) {
+  .line {
+    width: calc(400 - 40) + px;
+    margin: 0 20px;
+  }
+}
+
+
+
 
 .container {
   width: 1920px;
@@ -204,6 +301,71 @@
     opacity: .7;
   }
 }
+
+// スマホSP
+@media screen and (max-width:400px) {
+  .container {
+    width: 400px;
+    padding: 48px 20px 0 20px;
+    display: block;
+  }
+  .container:before {
+    display: none;
+  }
+  .contena {
+    width: 356px;
+    height: 30px;
+    display: flex;
+    margin: 0 auto 44px auto;
+    &__title {
+      width: 80%;
+      font-size: 24px;
+      line-height: 120%;
+      margin: 0 26px 0 0;
+    }
+    &__ar-image {
+      width: 30px;
+      height: 30px;
+      img {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+  .case {
+    display: block;
+    width: 360px;
+    margin: 0;
+    .b {
+      border-bottom: 2px solid #1E1E21;
+    }
+    &__section {
+      width: 100%;
+    }
+    &__warp1:before {
+      display: none;
+    }
+    &__warp2:before {
+      display: none;
+    }
+    &__section:nth-child(1),
+    &__section:nth-child(2),
+    &__section:nth-child(3),
+    &__section:nth-child(4) {
+      margin: 0 0 31px;
+    }
+    &__section__title {
+      font-size: 32px;
+      margin: 0 0 5.5px;
+    }
+    &__section__text {
+      font-size: 20px;
+      margin: 5.5px 0 0 0;
+      padding: 0 0 22px;
+    }
+  }
+}
+
 .case::before {
   content: "";
   border-bottom: 2px solid #1E1E21;
@@ -213,6 +375,12 @@
   width: 100%;
 }
 
+@media screen and (max-width:400px) {
+  .case::before {
+    display: none;
+  }  
+}
+
 .footer {
   width: 1920px;
   height: 750px;
@@ -220,7 +388,6 @@
   color: #F5F3EF;
   text-align: center;
   padding: 157px 64px;
-  // position: relative;
 }
 .form {
   width: 1824px;
@@ -258,6 +425,44 @@
       font-size: 24px;
       line-height: 120%;
       color: #F5F3EF;
+    }
+  }
+}
+
+@media screen and (max-width:400px) {
+  .footer  {
+    width: 400px;
+    height: auto;
+    padding: 53px 50px;
+  }
+  .form {
+    width: 99%;
+    &__name {
+      width: 100%;
+      font-size: 58px;
+      letter-spacing: -3px;
+      margin: 0 0 17px;
+    }
+    &__button {
+      padding: 11px 10px;
+      a {
+        font-size: 11px;
+      }
+    }
+  }
+  .pageList {
+    display: block;
+    width: 92px;
+    height: 182px;
+    margin: 57px  auto 0 auto;
+    &__item {
+      width: 100%;
+      height: calc(182px / 4);
+      position: relative;
+      a {
+        font-size: 20px;
+        @include p();
+      }
     }
   }
 }
