@@ -1,3 +1,31 @@
+.continer {
+  width: 1920px;
+  position: relative;
+}
+.continer .content {
+  width: 100%;
+  padding: 64px;
+}
+.continer__nav {
+  position: absolute;
+  top: 48px;
+  right: 48px;
+  background: #1E1E21;
+  color: #F5F3EF;
+  padding: 16px 24px;
+  border-radius: 500px;
+  cursor: pointer;
+}
+.continer__nav nav {
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: -0.5px;
+}
+.continer img {
+  width: 1920px;
+  display: block;
+}
+
 .footer {
   width: 1920px;
   height: 750px;
