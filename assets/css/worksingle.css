@@ -6,6 +6,61 @@
   width: 100%;
   padding: 64px;
 }
+.continer .content__title {
+  font-size: 192px;
+  letter-spacing: -10px;
+}
+.continer .content__box {
+  display: flex;
+  justify-content: space-between;
+}
+.continer .content__box__text {
+  width: calc(100% - 500px - 64px);
+  font-size: 64px;
+  line-height: 120%;
+  letter-spacing: -2px;
+}
+.continer .content__box__table {
+  width: 500px;
+  margin: 0 0 0 64px;
+}
+.continer .content__box__table1 {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #1E1E21;
+}
+.continer .content__box__table1 p {
+  font-size: 24px;
+  line-height: 120%;
+}
+.continer .content__box__table2 {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #1E1E21;
+  width: 100%;
+  padding: 20px 0;
+}
+.continer .content__box__table2 p {
+  font-size: 24px;
+  line-height: 120%;
+}
+.continer .content__box__table3 {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #1E1E21;
+  width: 100%;
+  padding: 20px 0;
+}
+.continer .content__box__table3 p {
+  font-size: 24px;
+  line-height: 120%;
+}
 .continer__nav {
   position: absolute;
   top: 48px;

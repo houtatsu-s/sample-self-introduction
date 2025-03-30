@@ -12,6 +12,59 @@
   .content {
     width: 100%;
     padding: 64px;
+    &__title {
+      font-size: 192px;
+      letter-spacing: -10px;
+    }
+    &__box {
+      display: flex;
+      justify-content: space-between;
+      &__text {
+        width: calc(100% - 500px - 64px);
+        font-size: 64px;
+        line-height: 120%;
+        letter-spacing: -2px;
+      }
+      &__table {
+        width: 500px;
+        margin: 0 0 0 64px;
+      }
+      &__table1 {
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid #1E1E21;
+        p {
+          font-size: 24px;
+          line-height: 120%;
+        }
+      }
+      &__table2 {
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid #1E1E21;
+        p {
+          font-size: 24px;
+          line-height: 120%;
+        }width: 100%;
+        padding: 20px 0;
+      }
+      &__table3 {
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid #1E1E21;
+        p {
+          font-size: 24px;
+          line-height: 120%;
+        }width: 100%;
+        padding: 20px 0;
+      }
+    }
   }
   &__nav {
     position: absolute;
