@@ -49,8 +49,7 @@
         p {
           font-size: 24px;
           line-height: 120%;
-        }width: 100%;
-        padding: 20px 0;
+        }
       }
       &__table3 {
         width: 100%;
@@ -61,8 +60,7 @@
         p {
           font-size: 24px;
           line-height: 120%;
-        }width: 100%;
-        padding: 20px 0;
+        }
       }
     }
   }
@@ -86,6 +84,68 @@
     display: block;
   }
 }
+
+@media screen and (max-width:400px) {
+  .continer {
+    width: 400px;
+    padding: 55px 0 0;
+    &__nav {
+      position: absolute;
+      top: 22px;
+      right: 21px;
+      padding: 13px 20px;
+      nav {
+        font-size: 20px;
+        letter-spacing: -0.4px;
+      }
+    }
+    .content {
+      width: 360px;
+      padding: 0;
+      margin: 30px 24px;
+      &__title {
+        font-size: 80px;
+        line-height: 110%;
+        letter-spacing: -4px;
+      }
+      &__box {
+        display: block;
+        &__text {
+          width: 360px;
+          font-size: 24px;
+          line-height: 120%;
+          letter-spacing: -.7px;
+          margin: 0 0 25px;
+        }
+        &__table {
+          width: 360px;
+          margin: 0 0 25px;
+        }
+        &__table1 {
+          padding: 14px 0;
+          p {
+            font-size: 17px;
+          }
+        }&__table2 {
+          padding: 14px 0;
+          p {
+            font-size: 17px;
+          }
+        }&__table3 {
+          padding: 14px 0;
+          p {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+    img {
+      width: 400px;
+      display: block;
+    }
+  }
+}
+
 .warp {
   width: 1920px;
   padding: 64px 64px 0 64px;
@@ -193,6 +253,113 @@
   }
 }
 
+@media screen and (max-width:400px) {
+  .warp {
+    width: 400px;
+    padding: 57px 19px 57px 20px;
+    display: block;
+    &__box1 {
+      width: 100%;
+      height: 30px;
+      margin: 0 0 71px;
+      .performance {
+        height: 30px;
+        .title {
+          width: 293px;
+          height: 29px;
+          font-size: 24px;
+          letter-spacing: 0;
+        }
+        .image {
+          width: 30px;
+          height: 30px;
+          img {
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+    }
+    &__line {
+      display: none;
+    }
+    &__box2 {
+      width: 100%;
+      margin: 0;
+      section:nth-child(1) {
+        padding: 0 0 27px;
+        border-bottom: 2px solid #1E1E21;
+        .s__title {
+          margin: 0 0 11px;
+        }
+        .s__name {
+          font-size: 32px;
+          margin: 0 0 11px;
+        }
+        .s__text {
+          display: -webkit-box;            
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          -webkit-line-clamp: 4;
+        }
+      }
+      section:nth-child(2) {
+        padding: 29px 0 27px;
+        border-bottom: 2px solid #1E1E21;
+        .s__title {
+          margin: 0 0 11px;
+        }
+        .s__name {
+          font-size: 32px;
+          margin: 0 0 11px;
+        }
+        .s__text {
+          display: -webkit-box;            
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          -webkit-line-clamp: 4;
+        }
+      }
+      section:nth-child(3) {
+        padding: 29px 0 27px;
+        border-bottom: 2px solid #1E1E21;
+        .s__title {
+          margin: 0 0 11px;
+        }
+        .s__name {
+          font-size: 32px;
+          margin: 0 0 11px;
+        }
+        .s__text {
+          display: -webkit-box;            
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          -webkit-line-clamp: 4;
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
 .gallery {
   width: 1920px;
   &__title {
@@ -213,6 +380,26 @@
   }
 }
 
+@media screen and (max-width:400px) {
+  .gallery {
+    width: 400px;
+    &__title {
+      height: auto;
+      color: #1E1E21;
+      padding: 0 20px 20px;
+    }
+    &__text {
+      font-size: 24px;
+      line-height: 120%;
+      letter-spacing: 0px;
+    }
+    .image {
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
 
 
 
@@ -224,11 +411,7 @@
 
 
 
-
-
-
-
-
+}
 
 // フッター部分ここから
 .footer {
