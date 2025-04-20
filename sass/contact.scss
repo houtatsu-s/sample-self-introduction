@@ -1,0 +1,94 @@
+// 真ん中配置用
+@mixin p($top:50%, $left:50%) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  transform: translate(-50%, -50%);
+}
+
+// フッター部分ここから
+.footer {
+  width: 1920px;
+  height: 750px;
+  background: #1E1E21;
+  color: #F5F3EF;
+  text-align: center;
+  padding: 157px 64px;
+}
+.form {
+  width: 1824px;
+  &__name {
+    width: calc(1920px - 48px - 48px);
+    margin: 0 auto;
+    font-size: 192px;
+    line-height: 100%;
+    letter-spacing: -10px;
+    margin: 0 0 32px;
+  }
+  &__button {
+    background: #F5F3EF;
+    border-radius: 500px;
+    padding: 20px 30px;
+    width: auto;
+    display: inline-block;
+    a {
+      font-size: 20px;
+      line-height: 110%;
+      color: #1E1E21;
+    }
+  }
+}
+.pageList {
+  display: flex;
+  justify-content: space-between;
+  width: 569px;
+  height: 29px;
+  align-items: center;
+  margin: 140px  auto 0 auto;
+  &__item {
+    width: 111px;
+    a {
+      font-size: 24px;
+      line-height: 120%;
+      color: #F5F3EF;
+    }
+  }
+}
+// フッター（スマホ用）
+@media screen and (max-width:400px) {
+  .footer  {
+    width: 400px;
+    height: auto;
+    padding: 53px 50px;
+  }
+  .form {
+    width: 99%;
+    &__name {
+      width: 100%;
+      font-size: 58px;
+      letter-spacing: -3px;
+      margin: 0 0 17px;
+    }
+    &__button {
+      padding: 11px 10px;
+      a {
+        font-size: 11px;
+      }
+    }
+  }
+  .pageList {
+    display: block;
+    width: 92px;
+    height: 182px;
+    margin: 57px  auto 0 auto;
+    &__item {
+      width: 100%;
+      height: calc(182px / 4);
+      position: relative;
+      a {
+        font-size: 20px;
+        @include p();
+      }
+    }
+  }
+}
