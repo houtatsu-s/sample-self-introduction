@@ -1,3 +1,139 @@
+main {
+  width: 1920px;
+  height: 1200px;
+  display: flex;
+}
+main img {
+  display: block;
+  width: 960px;
+  height: 100%;
+}
+main .continer {
+  width: 960px;
+  padding: 64px;
+  position: relative;
+}
+main .continer .content {
+  width: 100%;
+  height: 310px;
+  margin: 0 0 300px 0;
+}
+main .continer .content__title {
+  display: inline-block;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: -1px;
+  margin: 0 0 16px 0;
+}
+main .continer .content__text {
+  font-size: 128px;
+  line-height: 100%;
+  letter-spacing: -4px;
+}
+main .continer .form {
+  width: 100%;
+  height: 462px;
+}
+main .continer .form__na, main .continer .form__em {
+  height: 76px;
+  margin: 0 0 16px;
+  position: relative;
+  background: #E4E1DA;
+}
+main .continer .form__me {
+  height: 200px;
+  margin: 0 0 16px;
+  position: relative;
+  background: #E4E1DA;
+}
+main .continer .form__text {
+  font-size: 20px;
+  line-height: 140%;
+  position: absolute;
+  top: 24px;
+  left: 30px;
+}
+main .continer .form__btn {
+  height: 62px;
+  background: #1E1E21;
+  border-radius: 500px;
+  position: relative;
+}
+main .continer .form__send {
+  font-size: 20px;
+  line-height: 110%;
+  color: #F5F3EF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main .continer__nav {
+  position: absolute;
+  top: 48px;
+  right: 48px;
+  background: #1E1E21;
+  color: #F5F3EF;
+  padding: 16px 24px;
+  border-radius: 500px;
+  cursor: pointer;
+}
+main .continer__nav nav {
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: -0.5px;
+}
+
+@media screen and (max-width: 400px) {
+  main {
+    width: 400px;
+    height: auto;
+    display: block;
+    position: relative;
+  }
+  main img {
+    width: 100%;
+    height: 500px;
+  }
+  main .continer {
+    width: 100%;
+    padding: 36px 20px 55px;
+  }
+  main .continer__nav {
+    top: -478px;
+    right: 20px;
+  }
+  main .continer .content {
+    height: auto;
+    margin: 0 0 87px;
+  }
+  main .continer .content__title {
+    font-size: 24px;
+  }
+  main .continer .content__text {
+    font-size: 80px;
+    line-height: 110%;
+  }
+  main .continer .form {
+    width: 100%;
+    height: auto;
+  }
+  main .continer .form__na, main .continer .form__em {
+    height: 81px;
+  }
+  main .continer .form__me {
+    height: 213px;
+    margin: 0 0 18px;
+  }
+  main .continer .form__btn {
+    height: 50px;
+  }
+  main .continer .form__send {
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.5px;
+  }
+}
 .footer {
   width: 1920px;
   height: 750px;
