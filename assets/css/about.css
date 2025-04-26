@@ -2,8 +2,9 @@ figure {
   width: 1920px;
   height: 1621px;
   display: flex;
+  position: relative;
 }
-figure img {
+figure .about-img {
   width: 960px;
   height: 1165px;
   display: block;
@@ -11,7 +12,6 @@ figure img {
 figure .container {
   width: 960px;
   padding: 64px;
-  position: relative;
 }
 figure .content1 {
   width: 864px;
@@ -44,6 +44,46 @@ figure .content1__text {
   line-height: 160%;
   color: #1E1E21;
 }
+figure .content1 .nav__links {
+  position: absolute;
+  left: -100%;
+}
+figure .content1 .nav__links.is-active {
+  position: absolute;
+  width: 1920px;
+  height: 1200px;
+  background: #1E1E21;
+  padding: 128px;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+figure .content1 .nav__links.is-active a {
+  display: flex;
+  justify-content: center;
+  font-size: 128px;
+  letter-spacing: -4px;
+  margin: 0 0 16px;
+  color: #F5F3EF;
+}
+figure .content1 .nav__links.is-active a:first-child {
+  margin: 192px 0 16px 0;
+}
+figure .content1 .nav__links.is-active .image {
+  width: 70px;
+  height: 70px;
+  margin: 0 16px 0 0;
+  position: relative;
+}
+figure .content1 .nav__links.is-active .image .ai {
+  width: 35px;
+  height: 35px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 figure .content1__nav {
   position: absolute;
   top: 48px;
@@ -58,6 +98,23 @@ figure .content1__nav nav {
   font-size: 24px;
   line-height: 100%;
   letter-spacing: -0.5px;
+}
+figure .content1__nav.is-active {
+  display: none;
+}
+figure .content1 .link__close {
+  position: absolute;
+  top: 64px;
+  right: 64px;
+  cursor: pointer;
+}
+figure .content1 .link__close .c-text {
+  background: #F5F3EF;
+  padding: 16px 24px;
+  color: #1E1E21;
+  font-size: 24px;
+  letter-spacing: -0.5px;
+  border-radius: 50px;
 }
 figure .line {
   margin: 64px 0;
@@ -88,7 +145,7 @@ figure .content2__text {
     display: block;
     position: relative;
   }
-  figure img {
+  figure .about-img {
     width: 400px;
     height: 500px;
     display: block;
@@ -125,6 +182,31 @@ figure .content2__text {
     font-size: 20px;
     line-height: 160%;
   }
+  figure .content1 .nav__links.is-active {
+    width: 400px;
+    height: 800px;
+    padding: 0;
+  }
+  figure .content1 .nav__links.is-active a {
+    display: flex;
+    justify-content: center;
+    font-size: 53px;
+    letter-spacing: -1.6px;
+    margin: 0 0 6px;
+    color: #F5F3EF;
+  }
+  figure .content1 .nav__links.is-active a:first-child {
+    margin: 284px 0 6px 0;
+  }
+  figure .content1 .nav__links.is-active .image {
+    width: 29px;
+    height: 29px;
+    margin: 0 7px 0 0;
+  }
+  figure .content1 .nav__links.is-active .image .ai {
+    width: 15px;
+    height: 15px;
+  }
   figure .content1__nav {
     position: absolute;
     top: 22px;
@@ -133,6 +215,15 @@ figure .content2__text {
   }
   figure .content1__nav nav {
     font-size: 20px;
+    letter-spacing: -0.4px;
+  }
+  figure .content1 .link__close {
+    top: 22px;
+    right: 21px;
+  }
+  figure .content1 .link__close .c-text {
+    padding: 13px 19px;
+    font-size: 19px;
     letter-spacing: -0.4px;
   }
   figure .content2 {
